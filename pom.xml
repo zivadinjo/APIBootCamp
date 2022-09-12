@@ -13,6 +13,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <rest.assured.version>4.4.0</rest.assured.version>
+        <java.faker.version>1.0.2</java.faker.version>
     </properties>
     <dependencies>
         <!--Rest Assured   -->
@@ -26,7 +27,7 @@
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
+            <version>${java.faker.version}</version>
         </dependency>
 
         <!--        RestAssured json schema dependency -->
