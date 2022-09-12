@@ -39,14 +39,16 @@ public class P03_DeserilizationWithMapTest extends HrTestBase {
         System.out.println("====== GET FIRST LOCATION  ======");
         Map<String, Object> firstRowMap = jp.getMap("items[0]");
         System.out.println(firstRowMap);
-        /*
+/**
+ * If you know matching tyoe of data you can do casting to retrieve it from response
+ * I changed from Map<String Object> to Map<String , String> and hover over it,and then click casting
         System.out.println("------");
-        List<Map<String, Object>> firstRowLinks = (List<Map<String, Object>>) firstRowMap.get("links");
+        List<Map<String, String>> firstRowLinks = (List<Map<String, String>>) firstRowMap.get("links");
         System.out.println(firstRowLinks);
         System.out.println(firstRowLinks.get(0).get("rel"));
         System.out.println("------");
+*/
 
-         */
 
 
         System.out.println("====== GET FIRST LOCATION FIRST LINK  ======");
